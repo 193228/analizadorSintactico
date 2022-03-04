@@ -8,4 +8,4 @@ a@gmail.com <P> lalo+01 <A> hola juan este es mi asunto <D> destinatario@gmail.c
 
  Sintaxis Incorrecta
  
- a@gmail.coms <P> lalo+01 <A> hola juan este es mi asunto <D> destinatario@gmail.com <T> <BN> binario a numero 010101 #es erroneo porque el remitente tiene que terminar con .com
+ a@gmail.comss <P> lalo+01 <A> hola juan este es mi asunto <D> destinatario@gmail.com <T> <BN> binario a numero 010101 #es erroneo porque el remitente tiene que terminar con .com

@@ -39,6 +39,10 @@
       <height>531</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
@@ -69,9 +73,9 @@
    <widget class="QPushButton" name="uploadTxt">
     <property name="geometry">
      <rect>
-      <x>540</x>
+      <x>510</x>
       <y>680</y>
-      <width>221</width>
+      <width>291</width>
       <height>41</height>
      </rect>
     </property>
@@ -80,7 +84,7 @@
 font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>Subir Archivo .txt</string>
+     <string>Subir Archivo (mantenimiento)</string>
     </property>
    </widget>
    <widget class="QPushButton" name="exportTxt">
@@ -183,6 +187,10 @@ b : 1 | 0
       <height>531</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+    </property>
     <attribute name="horizontalHeaderDefaultSectionSize">
      <number>125</number>
     </attribute>
@@ -190,20 +198,68 @@ b : 1 | 0
      <property name="text">
       <string>Tipo De Error</string>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
     </column>
     <column>
      <property name="text">
       <string>Linea</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
      </property>
     </column>
     <column>
      <property name="text">
       <string>Posicion</string>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
     </column>
     <column>
      <property name="text">
       <string>Simbolo</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
      </property>
     </column>
    </widget>

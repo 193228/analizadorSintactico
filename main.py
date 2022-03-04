@@ -46,10 +46,9 @@ def llenadoTabla(ventana,sintaxis):
         fila+=1
 
 def salidaTexto(ventana):
-    lista = []
     entrada = ventana.inputText.toPlainText()
-    ejecucionAlgoritmo(entrada)
-    #llenadoTabla(ventana,lista)
+    lista = ejecucionAlgoritmo(entrada)
+    llenadoTabla(ventana,lista)
     #ventana.outputText.setPlainText(lista)
 
 if __name__ == '__main__':

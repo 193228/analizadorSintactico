@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = 'rightPADTrightBNrightMBrightNBA ARROBA B BN CARACTERES D DIGITOS DOMINIO GUIONBAJO LETRAS MB NB P PUNTO T TIPOS : Remitente P PasswordRemitente : CorreoAsunto : Letras transformacion2\n                | Numeros transformacion2Destinatario : Correo Password : Letras restoPass\n\t\t\t\t| Numeros restoPass\n\t\t\t\t| Caracteres restoPass restoPass : Letras restoPass\n\t\t\t\t| Numeros restoPass\n\t\t\t\t| Caracteres restoPass\n\t\t\t\t| empty tipoMensaje : empty binarioNumero\n                | empty mensajeBinario\n                | empty numeroBinarioCaracteres : CARACTERESCorreo : Usuario ARROBA Dominio PUNTO TipoUsuario : Letras restoID\n                | Numeros restoID restoID : Letras restoID\n                | GUIONBAJO restoID\n                | Numeros restoID\n                | PUNTO restoID\n                | empty Dominio : DOMINIO Tipo : TIPO Letras : LETRAS Numeros : DIGITOS transformacion : Letras transformacion\n                | B transformacion\n                | Numeros transformacion\n                | empty transformacion2 : Letras transformacion2\n                | Numeros transformacion2\n                | empty binarioNumero : Letras transformacion\n                | B transformacion\n                | Numeros transformacion mensajeBinario : Letras transformacion2\n                | Numeros transformacion2 numeroBinario : Letras transformacion2\n                | Numeros transformacion2 empty :'
+_lr_signature = 'A ARROBA B BN CARACTERES D DIGITOS DOMINIO GUIONBAJO LETRAS MB NB P PUNTO T TIPOS : Remitente P Password A Asunto D Destinatario T tipoMensajeRemitente : CorreoAsunto : Letras transformacion2\n                | Numeros transformacion2Destinatario : Correo Password : Letras restoPass\n\t\t\t\t| Numeros restoPass\n\t\t\t\t| Caracteres restoPass restoPass : Letras restoPass\n\t\t\t\t| Numeros restoPass\n\t\t\t\t| Caracteres restoPass\n\t\t\t\t| empty tipoMensaje : BN binarioNumero\n                | MB mensajeBinario\n                | NB numeroBinarioCaracteres : CARACTERESCorreo : Usuario ARROBA Dominio PUNTO TipoUsuario : Letras restoID\n                | Numeros restoID restoID : Letras restoID\n                | GUIONBAJO restoID\n                | Numeros restoID\n                | PUNTO restoID\n                | empty Dominio : DOMINIO Tipo : TIPO Letras : LETRAS Numeros : DIGITOS transformacion : Letras transformacion\n                | B transformacion\n                | Numeros transformacion\n                | empty transformacion2 : Letras transformacion2\n                | Numeros transformacion2\n                | empty binarioNumero : Letras transformacion\n                | B transformacion\n                | Numeros transformacion mensajeBinario : Letras transformacion2\n                | Numeros transformacion2 numeroBinario : Letras transformacion2\n                | Numeros transformacion2 empty :'
     
-_lr_action_items = {'LETRAS':([0,5,6,7,8,9,11,13,14,15,19,20,21,22,29,31,32,],[7,7,7,-27,-28,7,7,7,7,7,7,7,7,-16,7,7,7,]),'DIGITOS':([0,5,6,7,8,9,11,13,14,15,19,20,21,22,29,31,32,],[8,8,8,-27,-28,8,8,8,8,8,8,8,8,-16,8,8,8,]),'$end':([1,7,8,18,19,20,21,22,29,30,31,32,33,34,35,37,38,39,],[0,-27,-28,-1,-43,-43,-43,-16,-43,-6,-43,-43,-12,-7,-8,-9,-10,-11,]),'P':([2,3,40,41,],[9,-2,-17,-26,]),'ARROBA':([4,5,6,7,8,11,12,13,14,15,16,17,25,26,27,28,],[10,-43,-43,-27,-28,-43,-18,-43,-43,-43,-24,-19,-20,-21,-22,-23,]),'GUIONBAJO':([5,6,7,8,11,13,14,15,],[13,13,-27,-28,13,13,13,13,]),'PUNTO':([5,6,7,8,11,13,14,15,23,24,],[15,15,-27,-28,15,15,15,15,36,-25,]),'CARACTERES':([7,8,9,19,20,21,22,29,31,32,],[-27,-28,22,22,22,22,-16,22,22,22,]),'DOMINIO':([10,],[24,]),'TIPO':([36,],[41,]),}
+_lr_action_items = {'LETRAS':([0,5,6,7,8,9,11,13,14,15,19,20,21,22,29,30,32,33,39,40,46,47,49,58,59,60,62,63,64,66,67,69,70,71,73,74,],[7,7,7,-27,-28,7,7,7,7,7,7,7,7,-16,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,]),'DIGITOS':([0,5,6,7,8,9,11,13,14,15,19,20,21,22,29,30,32,33,39,40,46,47,49,58,59,60,62,63,64,66,67,69,70,71,73,74,],[8,8,8,-27,-28,8,8,8,8,8,8,8,8,-16,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,]),'$end':([1,7,8,47,49,50,54,55,57,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,],[0,-27,-28,-43,-43,-35,-33,-34,-1,-13,-43,-43,-43,-14,-43,-43,-15,-43,-43,-43,-36,-43,-43,-32,-37,-38,-39,-40,-41,-42,-29,-30,-31,]),'P':([2,3,44,45,],[9,-2,-17,-26,]),'ARROBA':([4,5,6,7,8,11,12,13,14,15,16,17,25,26,27,28,],[10,-43,-43,-27,-28,-43,-18,-43,-43,-43,-24,-19,-20,-21,-22,-23,]),'GUIONBAJO':([5,6,7,8,11,13,14,15,],[13,13,-27,-28,13,13,13,13,]),'PUNTO':([5,6,7,8,11,13,14,15,23,24,],[15,15,-27,-28,15,15,15,15,37,-25,]),'CARACTERES':([7,8,9,19,20,21,22,30,32,33,],[-27,-28,22,22,22,22,-16,22,22,22,]),'A':([7,8,18,19,20,21,22,30,31,32,33,34,35,36,41,42,43,],[-27,-28,29,-43,-43,-43,-16,-43,-6,-43,-43,-12,-7,-8,-9,-10,-11,]),'D':([7,8,38,39,40,47,48,49,50,51,54,55,],[-27,-28,46,-43,-43,-43,-3,-43,-35,-4,-33,-34,]),'B':([7,8,58,62,63,64,71,73,74,],[-27,-28,63,73,73,73,73,73,73,]),'DOMINIO':([10,],[24,]),'TIPO':([37,],[45,]),'T':([44,45,52,53,],[-17,-26,56,-5,]),'BN':([56,],[58,]),'MB':([56,],[59,]),'NB':([56,],[60,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'S':([0,],[1,]),'Remitente':([0,],[2,]),'Correo':([0,],[3,]),'Usuario':([0,],[4,]),'Letras':([0,5,6,9,11,13,14,15,19,20,21,29,31,32,],[5,11,11,19,11,11,11,11,29,29,29,29,29,29,]),'Numeros':([0,5,6,9,11,13,14,15,19,20,21,29,31,32,],[6,14,14,20,14,14,14,14,31,31,31,31,31,31,]),'restoID':([5,6,11,13,14,15,],[12,17,25,26,27,28,]),'empty':([5,6,11,13,14,15,19,20,21,29,31,32,],[16,16,16,16,16,16,33,33,33,33,33,33,]),'Password':([9,],[18,]),'Caracteres':([9,19,20,21,29,31,32,],[21,32,32,32,32,32,32,]),'Dominio':([10,],[23,]),'restoPass':([19,20,21,29,31,32,],[30,34,35,37,38,39,]),'Tipo':([36,],[40,]),}
+_lr_goto_items = {'S':([0,],[1,]),'Remitente':([0,],[2,]),'Correo':([0,46,],[3,53,]),'Usuario':([0,46,],[4,4,]),'Letras':([0,5,6,9,11,13,14,15,19,20,21,29,30,32,33,39,40,46,47,49,58,59,60,62,63,64,66,67,69,70,71,73,74,],[5,11,11,19,11,11,11,11,30,30,30,39,30,30,30,47,47,5,47,47,62,66,69,71,71,71,47,47,47,47,71,71,71,]),'Numeros':([0,5,6,9,11,13,14,15,19,20,21,29,30,32,33,39,40,46,47,49,58,59,60,62,63,64,66,67,69,70,71,73,74,],[6,14,14,20,14,14,14,14,32,32,32,40,32,32,32,49,49,6,49,49,64,67,70,74,74,74,49,49,49,49,74,74,74,]),'restoID':([5,6,11,13,14,15,],[12,17,25,26,27,28,]),'empty':([5,6,11,13,14,15,19,20,21,30,32,33,39,40,47,49,62,63,64,66,67,69,70,71,73,74,],[16,16,16,16,16,16,34,34,34,34,34,34,50,50,50,50,75,75,75,50,50,50,50,75,75,75,]),'Password':([9,],[18,]),'Caracteres':([9,19,20,21,30,32,33,],[21,33,33,33,33,33,33,]),'Dominio':([10,],[23,]),'restoPass':([19,20,21,30,32,33,],[31,35,36,41,42,43,]),'Asunto':([29,],[38,]),'Tipo':([37,],[44,]),'transformacion2':([39,40,47,49,66,67,69,70,],[48,51,54,55,78,79,80,81,]),'Destinatario':([46,],[52,]),'tipoMensaje':([56,],[57,]),'binarioNumero':([58,],[61,]),'mensajeBinario':([59,],[65,]),'numeroBinario':([60,],[68,]),'transformacion':([62,63,64,71,73,74,],[72,76,77,82,83,84,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -27,47 +27,47 @@ for _k, _v in _lr_goto_items.items():
 del _lr_goto_items
 _lr_productions = [
   ("S' -> S","S'",1,None,None,None),
-  ('S -> Remitente P Password','S',3,'p_S','sintactico.py',12),
-  ('Remitente -> Correo','Remitente',1,'p_Remitente','sintactico.py',16),
-  ('Asunto -> Letras transformacion2','Asunto',2,'p_Asunto','sintactico.py',19),
-  ('Asunto -> Numeros transformacion2','Asunto',2,'p_Asunto','sintactico.py',20),
-  ('Destinatario -> Correo','Destinatario',1,'p_Destinatario','sintactico.py',24),
-  ('Password -> Letras restoPass','Password',2,'p_Password','sintactico.py',27),
-  ('Password -> Numeros restoPass','Password',2,'p_Password','sintactico.py',28),
-  ('Password -> Caracteres restoPass','Password',2,'p_Password','sintactico.py',29),
-  ('restoPass -> Letras restoPass','restoPass',2,'p_restoPass','sintactico.py',34),
-  ('restoPass -> Numeros restoPass','restoPass',2,'p_restoPass','sintactico.py',35),
-  ('restoPass -> Caracteres restoPass','restoPass',2,'p_restoPass','sintactico.py',36),
-  ('restoPass -> empty','restoPass',1,'p_restoPass','sintactico.py',37),
-  ('tipoMensaje -> empty binarioNumero','tipoMensaje',2,'p_tipoMensaje','sintactico.py',40),
-  ('tipoMensaje -> empty mensajeBinario','tipoMensaje',2,'p_tipoMensaje','sintactico.py',41),
-  ('tipoMensaje -> empty numeroBinario','tipoMensaje',2,'p_tipoMensaje','sintactico.py',42),
-  ('Caracteres -> CARACTERES','Caracteres',1,'p_Caracteres','sintactico.py',45),
-  ('Correo -> Usuario ARROBA Dominio PUNTO Tipo','Correo',5,'p_Correo','sintactico.py',48),
-  ('Usuario -> Letras restoID','Usuario',2,'p_Usuario','sintactico.py',52),
-  ('Usuario -> Numeros restoID','Usuario',2,'p_Usuario','sintactico.py',53),
-  ('restoID -> Letras restoID','restoID',2,'p_restoID','sintactico.py',56),
-  ('restoID -> GUIONBAJO restoID','restoID',2,'p_restoID','sintactico.py',57),
-  ('restoID -> Numeros restoID','restoID',2,'p_restoID','sintactico.py',58),
-  ('restoID -> PUNTO restoID','restoID',2,'p_restoID','sintactico.py',59),
-  ('restoID -> empty','restoID',1,'p_restoID','sintactico.py',60),
-  ('Dominio -> DOMINIO','Dominio',1,'p_Dominio','sintactico.py',63),
-  ('Tipo -> TIPO','Tipo',1,'p_Tipo','sintactico.py',66),
-  ('Letras -> LETRAS','Letras',1,'p_Letras','sintactico.py',69),
-  ('Numeros -> DIGITOS','Numeros',1,'p_Numeros','sintactico.py',72),
-  ('transformacion -> Letras transformacion','transformacion',2,'p_transformacion','sintactico.py',75),
-  ('transformacion -> B transformacion','transformacion',2,'p_transformacion','sintactico.py',76),
-  ('transformacion -> Numeros transformacion','transformacion',2,'p_transformacion','sintactico.py',77),
-  ('transformacion -> empty','transformacion',1,'p_transformacion','sintactico.py',78),
-  ('transformacion2 -> Letras transformacion2','transformacion2',2,'p_transformacion2','sintactico.py',81),
-  ('transformacion2 -> Numeros transformacion2','transformacion2',2,'p_transformacion2','sintactico.py',82),
-  ('transformacion2 -> empty','transformacion2',1,'p_transformacion2','sintactico.py',83),
-  ('binarioNumero -> Letras transformacion','binarioNumero',2,'p_binarioNumero','sintactico.py',86),
-  ('binarioNumero -> B transformacion','binarioNumero',2,'p_binarioNumero','sintactico.py',87),
-  ('binarioNumero -> Numeros transformacion','binarioNumero',2,'p_binarioNumero','sintactico.py',88),
-  ('mensajeBinario -> Letras transformacion2','mensajeBinario',2,'p_mensajeBinario','sintactico.py',91),
-  ('mensajeBinario -> Numeros transformacion2','mensajeBinario',2,'p_mensajeBinario','sintactico.py',92),
-  ('numeroBinario -> Letras transformacion2','numeroBinario',2,'p_numeroBinario','sintactico.py',95),
-  ('numeroBinario -> Numeros transformacion2','numeroBinario',2,'p_numeroBinario','sintactico.py',96),
-  ('empty -> <empty>','empty',0,'p_empty','sintactico.py',99),
+  ('S -> Remitente P Password A Asunto D Destinatario T tipoMensaje','S',9,'p_S','sintactico.py',6),
+  ('Remitente -> Correo','Remitente',1,'p_Remitente','sintactico.py',9),
+  ('Asunto -> Letras transformacion2','Asunto',2,'p_Asunto','sintactico.py',12),
+  ('Asunto -> Numeros transformacion2','Asunto',2,'p_Asunto','sintactico.py',13),
+  ('Destinatario -> Correo','Destinatario',1,'p_Destinatario','sintactico.py',17),
+  ('Password -> Letras restoPass','Password',2,'p_Password','sintactico.py',20),
+  ('Password -> Numeros restoPass','Password',2,'p_Password','sintactico.py',21),
+  ('Password -> Caracteres restoPass','Password',2,'p_Password','sintactico.py',22),
+  ('restoPass -> Letras restoPass','restoPass',2,'p_restoPass','sintactico.py',27),
+  ('restoPass -> Numeros restoPass','restoPass',2,'p_restoPass','sintactico.py',28),
+  ('restoPass -> Caracteres restoPass','restoPass',2,'p_restoPass','sintactico.py',29),
+  ('restoPass -> empty','restoPass',1,'p_restoPass','sintactico.py',30),
+  ('tipoMensaje -> BN binarioNumero','tipoMensaje',2,'p_tipoMensaje','sintactico.py',33),
+  ('tipoMensaje -> MB mensajeBinario','tipoMensaje',2,'p_tipoMensaje','sintactico.py',34),
+  ('tipoMensaje -> NB numeroBinario','tipoMensaje',2,'p_tipoMensaje','sintactico.py',35),
+  ('Caracteres -> CARACTERES','Caracteres',1,'p_Caracteres','sintactico.py',38),
+  ('Correo -> Usuario ARROBA Dominio PUNTO Tipo','Correo',5,'p_Correo','sintactico.py',41),
+  ('Usuario -> Letras restoID','Usuario',2,'p_Usuario','sintactico.py',45),
+  ('Usuario -> Numeros restoID','Usuario',2,'p_Usuario','sintactico.py',46),
+  ('restoID -> Letras restoID','restoID',2,'p_restoID','sintactico.py',49),
+  ('restoID -> GUIONBAJO restoID','restoID',2,'p_restoID','sintactico.py',50),
+  ('restoID -> Numeros restoID','restoID',2,'p_restoID','sintactico.py',51),
+  ('restoID -> PUNTO restoID','restoID',2,'p_restoID','sintactico.py',52),
+  ('restoID -> empty','restoID',1,'p_restoID','sintactico.py',53),
+  ('Dominio -> DOMINIO','Dominio',1,'p_Dominio','sintactico.py',56),
+  ('Tipo -> TIPO','Tipo',1,'p_Tipo','sintactico.py',59),
+  ('Letras -> LETRAS','Letras',1,'p_Letras','sintactico.py',62),
+  ('Numeros -> DIGITOS','Numeros',1,'p_Numeros','sintactico.py',65),
+  ('transformacion -> Letras transformacion','transformacion',2,'p_transformacion','sintactico.py',68),
+  ('transformacion -> B transformacion','transformacion',2,'p_transformacion','sintactico.py',69),
+  ('transformacion -> Numeros transformacion','transformacion',2,'p_transformacion','sintactico.py',70),
+  ('transformacion -> empty','transformacion',1,'p_transformacion','sintactico.py',71),
+  ('transformacion2 -> Letras transformacion2','transformacion2',2,'p_transformacion2','sintactico.py',74),
+  ('transformacion2 -> Numeros transformacion2','transformacion2',2,'p_transformacion2','sintactico.py',75),
+  ('transformacion2 -> empty','transformacion2',1,'p_transformacion2','sintactico.py',76),
+  ('binarioNumero -> Letras transformacion','binarioNumero',2,'p_binarioNumero','sintactico.py',79),
+  ('binarioNumero -> B transformacion','binarioNumero',2,'p_binarioNumero','sintactico.py',80),
+  ('binarioNumero -> Numeros transformacion','binarioNumero',2,'p_binarioNumero','sintactico.py',81),
+  ('mensajeBinario -> Letras transformacion2','mensajeBinario',2,'p_mensajeBinario','sintactico.py',85),
+  ('mensajeBinario -> Numeros transformacion2','mensajeBinario',2,'p_mensajeBinario','sintactico.py',86),
+  ('numeroBinario -> Letras transformacion2','numeroBinario',2,'p_numeroBinario','sintactico.py',90),
+  ('numeroBinario -> Numeros transformacion2','numeroBinario',2,'p_numeroBinario','sintactico.py',91),
+  ('empty -> <empty>','empty',0,'p_empty','sintactico.py',95),
 ]

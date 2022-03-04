@@ -1,16 +1,9 @@
 import ply.yacc as yacc
 from expresiones import tokens
-
-precedence = (
-	('right','P','A','D','T'),
-	('right','BN'),
-	('right','MB'),
-	('right', 'NB')
-	)
+lista = []
 
 def p_S(p):
-    '''S : Remitente P Password'''
-#ejemplo correo@gmail.com P password% A asunto del correo  D
+    '''S : Remitente P Password A Asunto D Destinatario T tipoMensaje'''
 
 def p_Remitente(p):
     '''Remitente : Correo'''
@@ -37,9 +30,9 @@ def p_restoPass(p):
 				| empty '''
 
 def p_tipoMensaje(p):
-    '''tipoMensaje : empty binarioNumero
-                | empty mensajeBinario
-                | empty numeroBinario'''
+    '''tipoMensaje : BN binarioNumero
+                | MB mensajeBinario
+                | NB numeroBinario'''
 
 def p_Caracteres(p):
     '''Caracteres : CARACTERES'''
@@ -86,14 +79,17 @@ def p_binarioNumero(p):
     '''binarioNumero : Letras transformacion
                 | B transformacion
                 | Numeros transformacion '''
+    print("binarioNumero")
 
 def p_mensajeBinario(p):
     '''mensajeBinario : Letras transformacion2
                 | Numeros transformacion2 '''
+    print("mensaje binario")
 
 def p_numeroBinario(p):
     '''numeroBinario : Letras transformacion2
                 | Numeros transformacion2 '''
+    print("numeroBinario")
 
 def p_empty(p):
     'empty :'
@@ -102,13 +98,16 @@ def p_empty(p):
 
 def p_error(p):
     if p:
-        #estado = str(p.type), str(p.lineno), str(p.lexpos), str(p.value)
+        estado = str(p.type), str(p.lineno), str(p.lexpos), str(p.value)
         print("Error De Sintaxis -> ", p.type, " Linea -> ", p.lineno, " Posicion -> ", p.lexpos, " Simbolo/s -> ",p.value)
         parser.errok()
+        lista.append(estado)
     else:
         print("Error De Sintaxis EOF")
 
 parser = yacc.yacc()
 
 def ejecucionAlgoritmo(texto):
+    lista.clear()
     parser.parse(texto)
+    return lista

@@ -14,7 +14,7 @@ class MyApp(PyQt5.QtWidgets.QMainWindow, ventanaPrincipal):
 
 def acciones(ventana):
     redireccionarTabla(ventana)
-    ventana.uploadTxt.clicked.connect(lambda: cargarArchivo(ventana))
+    #ventana.uploadTxt.clicked.connect(lambda: cargarArchivo(ventana))
     ventana.exportTxt.clicked.connect(lambda: salidaTexto(ventana))
 
 def redireccionarTabla(ventana):
